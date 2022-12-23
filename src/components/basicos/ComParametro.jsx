@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function ComParametro(props) {
-    console.log(props)
     const status = props.nota >= 7 ? 'Aprovado' : 'para a Recuperação'
     const notaInt = Math.round(props.nota)
     return (<div>

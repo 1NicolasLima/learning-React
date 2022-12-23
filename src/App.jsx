@@ -7,6 +7,8 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Fragmento from './components/basicos/fragmento';
 import NumeroAleatorio from "./components/basicos/NumeroAleatorio";
 import Primeiro from './components/basicos/Primeiro';
+import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
@@ -19,12 +21,16 @@ export default _ => (
     <div className='App'>
         <h1>Fundamentos React (Arrow _)</h1>
         <div className="Cards">
+            <Card titulo="#08 - Renderização Condicional" color="#982395">
+                <ParOuImpar numero={20}></ParOuImpar>
+                <UsuarioInfo usuario={{ nome: 'Fernando' }}> </UsuarioInfo>
+                {/* <UsuarioInfo usuario={{ email: 'fer@nando.com' }}></UsuarioInfo> */}
+            </Card>
             <Card titulo="#07 - Repetição Exercicio" color="#3A9AD9">
                 <TabelaProdutos></TabelaProdutos>
             </Card>
             <Card titulo="#06 - Repetição" color="#FF4C65">
                 <ListaAlunos></ListaAlunos>
-                <TabelaProdutos></TabelaProdutos>
             </Card>
             <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
                 <Familia sobrenome="Silva">
