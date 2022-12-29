@@ -1,18 +1,21 @@
 import React from "react";
 import './App.css';
 
+import Card from './components/layout/Card';
+
 import ComParametro from './components/basicos/ComParametro';
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Fragmento from './components/basicos/fragmento';
 import NumeroAleatorio from "./components/basicos/NumeroAleatorio";
 import Primeiro from './components/basicos/Primeiro';
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import Input from "./components/formulario/Input";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
-
-import Card from './components/layout/Card';
 
 //forma mais reduzida de criar uma função
 
@@ -21,6 +24,18 @@ export default _ => (
     <div className='App'>
         <h1>Fundamentos React (Arrow _)</h1>
         <div className="Cards">
+            <Card titulo="#11 - Componente Controlado (Input)" color="#E45F56">
+                <Input></Input>
+            </Card>
+
+            <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+                <IndiretaPai></IndiretaPai>
+            </Card>
+
+            <Card titulo="#09 - Comunicação Direta" color="#59323C">
+                <DiretaPai></DiretaPai>
+            </Card>
+
             <Card titulo="#08 - Renderização Condicional" color="#982395">
                 <ParOuImpar numero={20}></ParOuImpar>
                 <UsuarioInfo usuario={{ nome: 'Fernando' }}> </UsuarioInfo>
