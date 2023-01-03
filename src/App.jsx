@@ -15,6 +15,7 @@ import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import Contador from "./components/contador/Contador";
 import Input from "./components/formulario/Input";
+import Mega from "./components/mega/Mega";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
@@ -25,6 +26,9 @@ export default _ => (
     <div className='App'>
         <h1>Fundamentos React (Arrow _)</h1>
         <div className="Cards">
+            <Card titulo="#13 - Mega" color="#b9006E">
+                <Mega qtd={7} numeros={7}></Mega>
+            </Card>
             <Card titulo="#12 - Contador" color="#424242">
                 <Contador numeroInicial={10}></Contador>
             </Card>
